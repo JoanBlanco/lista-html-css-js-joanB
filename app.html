@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/index.css">
+  <title>Lista de tareas</title>
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header">
+    <!-- Navbar -->
+    <nav class="navbar container">
+      <a href="./index.html" class="navbar-logo">todoapp</a>
+      <div class="navbar-menu">
+        <a href="./index.html#home" class="navbar-link">Home</a>
+        <a href="./index.html#about" class="navbar-link">About</a>
+        <a href="./index.html#contact" class="navbar-link">Contact</a>
+        <a href="./app.html" class="navbar-link">App</a>
+      </div>
+      <!-- navbar icons -->
+      <div class="navbar-icons">
+        <button class="dark-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+          class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" />
+          </svg>
+        </button>
+        <div class="burger">
+          <span class="span-burger"></span>
+          <span class="span-burger"></span>
+          <span class="span-burger"></span>
+        </div>
+      </div>
+    </nav> <!-- Navbar -->
+  </header> <!-- Header -->
+  <!-- TO-DO -->
+  <main class="container main-container">
+    <!-- TO-DO container -->
+    <div class="todo sombra">
+      <h1>TODOAPP</h1>
+      <!-- form -->
+      <form class="todo-form" id = 'form'>
+        <input type="text" autofocus autocomplete="off" placeholder="Create a new todo...">
+        <button type="submit">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-circle-plus" viewBox="0 0 24 24"
+            stroke-width="1.5" stroke="#fff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <circle cx="12" cy="12" r="9" />
+            <line x1="9" y1="12" x2="15" y2="12" />
+            <line x1="12" y1="9" x2="12" y2="15" />
+          </svg>
+        </button>
+      </form>
+      <ul class="todo-container">
+        <!-- lista -->
+        <!-- <li class="todo-lista line-through">
+          <button class="delete-button">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-trash trash" viewBox="0 0 24 24"
+              stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <line x1="4" y1="7" x2="20" y2="7" />
+              <line x1="10" y1="11" x2="10" y2="17" />
+              <line x1="14" y1="11" x2="14" y2="17" />
+              <path d="M5 7l1 12a2 2 0 0 0 2 2h8a2 2 0 0 0 2 -2l1 -12" />
+              <path d="M9 7v-3a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v3" />
+            </svg>
+          </button>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, esse inventore porro mollitia explicabo maxime numquam, pariatur saepe molestias reiciendis, at sit ipsam repudiandae eum consectetur cumque modi totam unde.</p>
+          <button class="check-button">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-circle-check check completed"
+              viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <circle cx="12" cy="12" r="9" />
+              <path d="M9 12l2 2l4 -4" />
+            </svg>
+          </button> 
+        </li>  -->
+      </ul>
+      <!-- Options to-do -->
+      <div class="todo-options">
+        <div>
+          <p id="count">0 items left</p>
+          <a id="clear" href="#">Clear complete</a>
+        </div>
+        <div>
+          <a id="all" href="#">All</a>
+          <a id="active" href="#">Active</a>
+          <a id="completed" href="#">Completed</a>
+        </div>
+      </div> <!-- Options to-do -->
+    </div> <!-- TO-DO container -->
+  </main>
+  <script src="./js/index.js"></script>
+  <script src="./js/darkMode.js"></script>
+</body>
+
+</html>

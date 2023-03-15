@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/index.css">
+  <title>Lista de tareas</title>
+</head>
+
+<body class="body">
+  <!-- Header -->
+  <header class="header">
+    <!-- Navbar -->
+    <nav class="navbar container">
+      <a href="./index.html" class="navbar-logo">todoapp</a>
+      <div class="navbar-menu">
+        <a href="#home" class="navbar-link">Home</a>
+        <a href="#about" class="navbar-link">About</a>
+        <a href="#contact" class="navbar-link">Contact</a>
+        <a href="./app.html" class="navbar-link">App</a>
+      </div>
+      <!-- navbar icons -->
+      <div class="navbar-icons">
+        <button class="dark-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+          class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" />
+          </svg>
+        </button>
+        <div class="burger">
+          <span class="span-burger"></span>
+          <span class="span-burger"></span>
+          <span class="span-burger"></span>
+        </div>
+      </div>
+    </nav> <!-- Navbar -->
+  </header> <!-- Header -->
+  <!-- Main -->
+  <main id="home" class="main container">
+    <div class="main-info">
+      <h1><span class="span--purple">T</span>odo<span class="span--purple">A</span>pp</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae quo vitae excepturi fugiat praesentium
+        perspiciatis sint, aliquid, perferendis vero deserunt suscipit at labore eos dolorum mollitia quia nihil
+        laborum! Sunt.</p>
+      <a href="./app.html" id="btn-app" class="btn sombra">Get app</a>
+    </div>
+    <div class="main-img">
+      <img src="./img/app.svg" alt="app-img">
+    </div>
+  </main>
+  <!-- About -->
+  <section class="about container" id="about">
+    <div class="about-info">
+      <h2><span class="span--purple">A</span>bout <span class="span--purple">U</span>s</h2>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. A quam illum magni facere labore reiciendis vel id
+        molestiae placeat provident? Vitae obcaecati ducimus odio quam doloribus dolorum, recusandae est rem?</p>
+      <a href="#" class="btn sombra">Contac us</a>
+    </div>
+    <div class="about-img">
+      <img src="./img/about.svg" alt="about-img">
+    </div>
+  </section>
+  <!-- Contact -->
+  <section id="contact">
+    <div class="contact container">
+      <article class="article">
+        <a href="./index.html" class="contact-logo">TodoApp</a>
+        <a class="contact-link" href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+            stroke-width="1.5" stroke="currentColor" class="contact-svg">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
+          </svg>
+          Phone: +58-123-456-7890</a>
+        <a class="contact-link" href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+            stroke-width="1.5" stroke="currentColor" class="contact-svg">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+          </svg>
+          example@example.com</a>
+      </article>
+
+      <article class="article">
+        <a class="contact-link" href="#">About Us</a>
+        <a class="contact-link" href="#">Jobs</a>
+        <a class="contact-link" href="#">Press</a>
+        <a class="contact-link" href="#">Blog</a>
+      </article>
+
+      <article class="article">
+        <a class="contact-link" href="#">Contact Us</a>
+        <a class="contact-link" href="#">Terms</a>
+        <a class="contact-link" href="#">Privacy</a>
+      </article>
+
+      <article class="contact-social">
+        <a class="sombra" href="#"><svg xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-brand-facebook contact-svg" width="32" height="32" viewBox="0 0 24 24"
+            stroke-width="1.5" stroke="#fff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+          </svg></a>
+        <a class="sombra" href="#"><svg xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-brand-twitter contact-svg" width="32" height="32" viewBox="0 0 24 24"
+            stroke-width="1.5" stroke="#fff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path
+              d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
+          </svg></a>
+        <a class="sombra" href="#"><svg xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-brand-instagram contact-svg" width="32" height="32" viewBox="0 0 24 24"
+            stroke-width="1.5" stroke="#fff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <rect x="4" y="4" width="16" height="16" rx="4" />
+            <circle cx="12" cy="12" r="3" />
+            <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
+          </svg></a>
+      </article>
+    </div>
+  </section>
+  <!-- Footer -->
+  <footer id="footer">
+    <p>All rights reserved © TodoApp 2023</p>
+  </footer>
+  <script src="./js/darkMode.js"></script>
+</body>
+</html>
